@@ -7,22 +7,22 @@ import styles from '../styles/Home.module.scss'
 
 export default function Footer() {
 
-  return(
+  return (
     <footer className={styles.footer}>
-    <div>
-      <Image src={AppDoptame} className={styles.footerImage}/>
-    </div>
-    <div className={styles.infoSection}>
-      <h2>¡Prueba AppDoptame!</h2>
-      <h6>Desarrollado por</h6>
-      <lu>
-      <li>Andrés Guerra</li>
-      <li>Santiago Puerta</li>
-      <li>Juan Muñoz</li>
-      </lu>
-      <Image src={Eafit} className={styles.eafit} alt="Logo Eafit"/>
+      <div>
+        <Image src={AppDoptame} className={styles.footerImage} alt="Aplicacion"/>
       </div>
-      
+      <div className={styles.infoSection}>
+        <h2>¡Prueba AppDoptame!</h2>
+        <h3>Desarrollado por</h3>
+        <ul>
+          <li>Andrés Guerra</li>
+          <li>Santiago Puerta</li>
+          <li>Juan Muñoz</li>
+        </ul>
+        <Image src={Eafit} className={styles.eafit} alt="Logo Eafit" />
+      </div>
+
     </footer>
   )
 }

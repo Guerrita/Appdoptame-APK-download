@@ -228,11 +228,11 @@ width: 70%;
   margin: 0;
 }
 
-.infoSection lu li::marker{
+.infoSection ul li::marker{
   margin-right: 0;
 }
 
-.infoSection lu{
+.infoSection ul{
   padding: 20px 30px;
 }
 
@@ -249,7 +249,7 @@ width: 70%;
 }
 
 
-.infoSection>h6{
+.infoSection>h3{
   font-size: 2.4rem;
   margin: 0;
   font-family: cactusregular;
