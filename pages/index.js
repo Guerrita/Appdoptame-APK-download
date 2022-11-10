@@ -30,7 +30,7 @@ export default function Home() {
           <div className={styles.instructionPar}><p><span className={styles.instructionesDos} />Luego buscamos la opción "Instalar apps desconocidas"</p><Image className={styles.imageTwo} src={two} alt="Instalar apps desconocidad" /></div>
           <div className={styles.instructionImpar}><p><span className={styles.instructionesTres} />Ingresamos a Chrome</p><Image className={styles.imageThree} src={three} alt="opcines a habilitar"/></div>
           <div className={styles.instructionPar}><p><span className={styles.instructionesCuatro} />Ahora habilitamos la opción "Confiar en esta fuente"</p><Image className={styles.imageFour} src={four} alt="Chrome" /></div>
-          <div className={styles.instructionImpar}><p><span className={styles.instructionesCinco} />Por último descargamos la aplicación</p><a href="/APK/AppDoptame.zip" download="AppDoptame.zip"><button className={styles.bubblybutton} >¡Descarga AppDoptame!</button></a></div>
+          <div className={styles.instructionImpar}><p><span className={styles.instructionesCinco} />Por último descargamos la aplicación</p><a href="/APK/AppDoptame.apk" download="AppDoptame.apk"><button className={styles.bubblybutton} >¡Descarga AppDoptame!</button></a></div>
 
 
         </div></section>
