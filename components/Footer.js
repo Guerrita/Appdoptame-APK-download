@@ -1,7 +1,7 @@
 import React from "react";
 import Eafit from "../public/Eafit-Blanco.png"
 import Image from 'next/image'
-import AppDoptame from "../public/appdoptame.png"
+import AppDoptame from "../public/appdoptame-min.png"
 import styles from '../styles/Home.module.scss'
 
 

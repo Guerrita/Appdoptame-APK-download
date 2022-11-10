@@ -4,46 +4,38 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import FormCompleted from "../components/FormCompleted";
 import FormCard from "../components/Form";
-import banner from "../public/logo_orange_long.png";
+import banner from "../public/banner-appdoptame.png";
 import Footer from "../components/Footer";
+import one from "../public/settings-min.png";
+import two from "../public/unknown-apps-min.png";
+import three from "../public/apps-min.png";
+import four from "../public/chrome-min.png";
 
 export default function Home() {
-
-  const [formStep, setFormStep] = useState(0);
-
-  const nextFormStep = () => setFormStep((currentStep) => currentStep + 1);
-
-  const prevFormStep = () => setFormStep((currentStep) => currentStep - 1);
-
   return (
     <div>
       <Head>
-      <title>AppDoptame</title>
-        <meta name="description" content="Aplicacion para la adopcion de mascotas" />
+        <title>AppDoptame</title>
+        <meta name="description" content="Aplicación para la adopcion de mascotas" />
         <link rel="icon" href="/favicon.png" />
       </Head>
+      <section className={styles.bannerContainer}>
+        <Image className={styles.banner} alt="Banner principal" src={banner} />
+      </section>
 
-      <main className={styles.main}>
-        <section className={styles.bannerContainer}>
-          <Image className={styles.banner} alt="Banner principal" src={banner}  />
-          <button className={styles.bubblybutton}>¡Descarga AppDoptame!</button>
-        </section>
+      <section className={styles.instructiones}>
+        <h2>Instrucciones para la descarga de AppDoptame</h2>
+        <div className={styles.intructionSection}>
+          <div className={styles.instructionImpar}><p><span className={styles.instructionesUno} />Debemos dirigirnos a la configuración del celular</p><Image className={styles.imageOne} src={one} /></div>
+          <div className={styles.instructionPar}><p><span className={styles.instructionesDos} />Luego buscamos la opción "Instalar apps desconocidas"</p><Image className={styles.imageTwo} src={two} /></div>
+          <div className={styles.instructionImpar}><p><span className={styles.instructionesTres} />Ingresamos a Chrome</p><Image className={styles.imageThree} src={three} /></div>
+          <div className={styles.instructionPar}><p><span className={styles.instructionesCuatro} />Ahora habilitamos la opción "Confiar en esta fuente"</p><Image className={styles.imageFour} src={four} /></div>
+          <div className={styles.instructionImpar}><p><span className={styles.instructionesCinco} />Por último descargamos la aplicación</p><button className={styles.bubblybutton}>¡Descarga AppDoptame!</button></div>
 
-        <FormCard currentStep={formStep} prevFormStep={prevFormStep}>
-        <i class="fa-solid fa-3"></i>
-        <p><i class="fa-solid fa-circle-1"></i>Buenos dias empecemos esto</p>
-        {formStep == 0 && <div><h2>Bienvenido al tutorial de descarga</h2></div>}
-        {formStep == 1 && <FormCompleted />}
-        {formStep == 2 && <FormCompleted />}
 
-        {formStep > 2 && <FormCompleted />}
-      </FormCard>
+        </div></section>
 
-        
-
-      </main>
-
-      <Footer/>
+      <Footer />
     </div>
   )
 }
