@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div>
-        <Image src="/appdoptame-min.png" className={styles.footerImage} alt="Aplicacion"/>
+        <Image width={480} height={480}  src="/appdoptame-min.png" className={styles.footerImage} alt="Aplicacion"/>
       </div>
       <div className={styles.infoSection}>
         <h2>¡Prueba AppDoptame!</h2>
@@ -18,7 +18,7 @@ export default function Footer() {
           <li>Santiago Puerta</li>
           <li>Juan Muñoz</li>
         </ul>
-        <Image src="/Eafit-Blanco.png" className={styles.eafit} alt="Logo Eafit" />
+        <Image width={480} height={480} src="/Eafit-Blanco.png"  className={styles.eafit} alt="Logo Eafit" />
       </div>
 
     </footer>
