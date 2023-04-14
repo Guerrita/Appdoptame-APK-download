@@ -15,8 +15,8 @@ export default function Footer() {
         <h3>Desarrollado por</h3>
         <ul>
           <li>Andrés Guerra</li>
-          <li>Santiago Puerta</li>
-          <li>Juan Muñoz</li>
+          <li>Sebastian Velez</li>
+          <li>Juan Esteban Cardona</li>
         </ul>
         <Image width={480} height={480} src="/Eafit-Blanco.png"  className={styles.eafit} alt="Logo Eafit" />
       </div>
